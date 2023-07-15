@@ -44,7 +44,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  }  
+  }
   .heroForm {
     margin: 15px 0 30px 0;
   }
@@ -127,6 +127,45 @@ body {
   height: 500px;
 }
 
+@media only screen and (max-width: 425px) {
+  .heroForm {
+    width: 107%;
+  }
+  .heroFormButtons span {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+  }
+  .heroImg img {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .heroFormButtons span {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px 10px 20px;
+  }
+  .heroImg img {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* .heroForm{
+    width: 107%;
+  } */
+  .heroFormButtons span {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+  }
+  .heroImg img {
+    height: 300px;
+    width: 300px;
+  }
+}
 .heroSmallBoxContainer {
   display: flex;
   align-items: center;
@@ -210,6 +249,7 @@ body {
   margin-left: 50px;
   margin-bottom: -150px;
 }
+
 .serviceBoxContainer {
   display: flex;
   align-items: center;
@@ -223,6 +263,7 @@ body {
   font-size: 30px;
   text-align: center;
 }
+
 @media only screen and (max-width: 768px) {
   .serviceContainer {
     background: linear-gradient(
@@ -244,11 +285,15 @@ body {
   .serviceImg {
     height: 100px;
   }
-  .serviceBoxOuter  {
+  .serviceImg img {
+    margin-top: 35px;
+  }
+  .serviceBoxOuter {
     margin-top: 750px;
-   
   }
 }
+
+
 .serviceBox {
   width: 25%;
   padding: 20px;
@@ -256,6 +301,46 @@ body {
   background-color: rgba(128, 128, 128, 0.144);
   border-radius: var(--border-radius);
   margin: 40px 30px 70px 20px;
+}
+@media only screen and (max-width: 425px) {
+  .serviceImg {
+    margin-bottom: -350px;
+  }
+  .serviceImg img {
+    margin-top: 35px;
+    margin-left: -30px;
+    width: 330px;
+  }
+  
+}
+@media only screen and (max-width: 375px) {
+  .serviceImg {
+    /* margin-left: 50px; */
+    margin-bottom: -350px;
+  }
+  .serviceImg img {
+    margin-top: 35px;
+    margin-left: -30px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .serviceImg {
+    margin-bottom: -350px;
+  }
+  .serviceImg img {
+    margin-top: 35px;
+    margin-left: -30px;
+    width: 300px;
+  }
+  .serviceBox {
+    width: 25%;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.851);
+    background-color: rgba(128, 128, 128, 0.144);
+    border-radius: var(--border-radius);
+    margin: 40px 10px 40px 20px;
+  }
 }
 .serviceBoxImg {
   margin-top: -50px;
@@ -283,13 +368,7 @@ body {
   text-align: center;
   margin-bottom: 4rem;
 }
-/* .underline {
-  height: 0.25rem;
-  width: 10px;
-  background: var(--background-color);
-  margin-left: auto;
-  margin-right: auto;
-} */
+
 .container {
   width: 80vw;
   max-width: var(--fixed-width);
@@ -322,10 +401,10 @@ body {
 .reviewCardInfo .reviewCardInfoUnderline {
   height: 2px;
   width: 50px;
-  margin-bottom:15px ;
+  margin-bottom: 15px;
   background: var(--background-color);
 }
-.reviewCardInfo h4{
+.reviewCardInfo h4 {
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -384,12 +463,86 @@ body {
   margin-left: -110px;
   /* z-index: -1; */
 }
+
+.reviewCardButtonContainer {
+  margin-top: -50px;
+  margin-left: 110px;
+}
+@media only screen and (max-width: 425px) {
+  .reviewCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    width: 80%;
+    height: 400px;
+    padding: 10px;
+  }
+  .speech {
+    box-shadow: -21px -32px 30px -13px rgba(0, 0, 0, 0.173);
+    background-color: white;
+    border-bottom: none;
+    border-left: none;
+    height: 40px;
+    width: 30px;
+    padding: 16px;
+    transform: rotate(-131deg);
+    margin-top: -35px;
+    margin-left: -110px;
+    /* z-index: -1; */
+  }
+  .reviewCardImgContainerBox img {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 70px;
+    /* margin-bottom: ; */
+  }
+  .reviewCardButtonContainer {
+    margin-top: -40px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .reviewCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    width: 90%;
+    height: 400px;
+    padding: 10px;
+  }
+  .speech {
+    box-shadow: -21px -32px 30px -13px rgba(0, 0, 0, 0.173);
+    background-color: white;
+    border-bottom: none;
+    border-left: none;
+    height: 40px;
+    width: 30px;
+    padding: 16px;
+    transform: rotate(-131deg);
+    margin-top: -35px;
+    margin-left: -110px;
+    /* z-index: -1; */
+  }
+  .reviewCardImgContainerBox img {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 70px;
+    /* margin-bottom: ; */
+  }
+  .reviewCardButtonContainer {
+    margin-top: -40px;
+  }
+}
 @media only screen and (max-width: 320px) {
   .reviewCard {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     transition: var(--transition);
@@ -402,11 +555,11 @@ body {
     background-color: white;
     border-bottom: none;
     border-left: none;
-    height: 40px;
-    width: 20px;
-    padding: 20px;
+    height: 35px;
+    width: 18px;
+    padding: 16px;
     transform: rotate(-131deg);
-    margin-top: -35px;
+    margin-top: -37px;
     margin-left: -110px;
     /* z-index: -1; */
   }
@@ -416,10 +569,9 @@ body {
     margin-top: 70px;
     /* margin-bottom: ; */
   }
-}
-.reviewCardButtonContainer {
-  margin-top: -50px;
-  margin-left: 110px;
+  .reviewCardButtonContainer {
+    margin-top: -30px;
+  }
 }
 .reviewCardButtonContainer span {
   font-size: 30px;
@@ -433,17 +585,17 @@ body {
   align-items: center;
   justify-content: center;
 }
-.contactContainerOuter h2{
+.contactContainerOuter h2 {
   color: var(--background-color);
   font-size: 30px;
 }
-.contactContainerOuter .contactContainerOuterUnderline{
+.contactContainerOuter .contactContainerOuterUnderline {
   height: 2px;
   width: 100px;
-  margin-bottom:15px ;
+  margin-bottom: 15px;
   background: var(--background-color);
 }
-.contactContainerOuter{
+.contactContainerOuter {
   color: rgba(128, 128, 128, 0.905);
 }
 .contactContainer {
@@ -511,7 +663,7 @@ body {
   .contactBar {
     width: 10rem;
     height: 100%;
-    
+
     background-color: blue;
   }
   .contactBarInfo {
@@ -523,7 +675,7 @@ body {
     width: 190%;
     /* height: 40%; */
     padding: 15px;
-    margin-bottom:20px ;
+    margin-bottom: 20px;
   }
 }
 .contactBarInfo h3 {
@@ -566,6 +718,36 @@ body {
   justify-content: center;
   translate: 0 30%;
 }
+
+@media only screen and (max-width: 425px) {
+  .fillDetailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    translate: 25px 30%;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .fillDetailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    translate: 35px 30%;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .fillDetailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    translate: 10px 30%;
+    width: 90%;
+  }
+}
+
 .successInnerBox {
   display: flex;
   flex-direction: column;
